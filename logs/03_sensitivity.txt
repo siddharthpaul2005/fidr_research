@@ -1,0 +1,22 @@
+  GRID: 50 runs in 23.1s
+  CATH: 50 runs in 21.1s
+  ARC: 50 runs in 20.2s
+  FEED: 50 runs in 20.1s
+  RF: 50 runs in 19.8s
+0.1 {'GRID': {'pd': 1.0, 'delay_med_h': 69.137902749812, 'pd_or': 1.0, 'delay_or': 55.32912076661118}, 'CATH': {'pd': 1.0, 'delay_med_h': 45.65272000045241, 'pd_or': 1.0, 'delay_or': 31.74344089257267}, 'ARC': {'pd': 0.9, 'delay_med_h': 46.28907824848555, 'pd_or': 0.9, 'delay_or': 46.28907824848555}, 'FEED': {'pd': 1.0, 'delay_med_h': 21.4004275664265, 'pd_or': 1.0, 'delay_or': 13.861027944399051}, 'RF': {'pd': 1.0, 'delay_med_h': 22.678687574915095, 'pd_or': 1.0, 'delay_or': 14.768704798761458}, 'far_vote_per_1000h': 0.0}
+  GRID: 50 runs in 19.7s
+  CATH: 50 runs in 19.7s
+  ARC: 50 runs in 19.9s
+  FEED: 50 runs in 20.6s
+  RF: 50 runs in 19.6s
+0.25 {'GRID': {'pd': 1.0, 'delay_med_h': 40.77799809969728, 'pd_or': 1.0, 'delay_or': 31.35166788553129}, 'CATH': {'pd': 1.0, 'delay_med_h': 19.826803560568706, 'pd_or': 1.0, 'delay_or': 13.32366512724634}, 'ARC': {'pd': 1.0, 'delay_med_h': 28.787260593342353, 'pd_or': 1.0, 'delay_or': 28.787260593342353}, 'FEED': {'pd': 1.0, 'delay_med_h': 8.64539740087357, 'pd_or': 1.0, 'delay_or': 6.293243286197162}, 'RF': {'pd': 1.0, 'delay_med_h': 9.517987515793303, 'pd_or': 1.0, 'delay_or': 7.912757239475165}, 'far_vote_per_1000h': 0.0}
+  GRID: 50 runs in 19.7s
+  CATH: 50 runs in 19.8s
+  ARC: 50 runs in 19.9s
+  FEED: 50 runs in 20.0s
+  RF: 50 runs in 19.8s
+0.5 {'GRID': {'pd': 1.0, 'delay_med_h': 28.99446814565627, 'pd_or': 1.0, 'delay_or': 20.79969305471155}, 'CATH': {'pd': 1.0, 'delay_med_h': 12.781274467745984, 'pd_or': 1.0, 'delay_or': 9.6573265671902}, 'ARC': {'pd': 1.0, 'delay_med_h': 16.083780538836344, 'pd_or': 1.0, 'delay_or': 16.083780538836344}, 'FEED': {'pd': 1.0, 'delay_med_h': 4.808838035696757, 'pd_or': 0.98, 'delay_or': 4.471186378745915}, 'RF': {'pd': 1.0, 'delay_med_h': 5.1342570633524165, 'pd_or': 1.0, 'delay_or': 4.58880033990423}, 'far_vote_per_1000h': 0.0}
+  NOM: 100 runs in 33.7s
+x1.5 {'CUSUM': {'fa': 1, 'h': 27520.716666666667, 'per_1000h': 0.036336263045475437}, 'KF': {'fa': 0, 'h': 27600.0, 'per_1000h': 0.0}, 'BOCPD': {'fa': 0, 'h': 27600.0, 'per_1000h': 0.0}, 'OR': {'fa': 1, 'h': 27520.716666666667, 'per_1000h': 0.036336263045475437}, 'VOTE': {'fa': 0, 'h': 27600.0, 'per_1000h': 0.0}}
+  NOM: 100 runs in 33.4s
+x2.0 {'CUSUM': {'fa': 6, 'h': 27103.05, 'per_1000h': 0.2213772988648879}, 'KF': {'fa': 0, 'h': 27600.0, 'per_1000h': 0.0}, 'BOCPD': {'fa': 0, 'h': 27600.0, 'per_1000h': 0.0}, 'OR': {'fa': 6, 'h': 27103.05, 'per_1000h': 0.2213772988648879}, 'VOTE': {'fa': 0, 'h': 27600.0, 'per_1000h': 0.0}}

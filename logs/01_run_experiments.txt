@@ -1,0 +1,377 @@
+training set
+  NOM: 100 runs in 39.4s
+  GRID: 60 runs in 23.8s
+  CATH: 60 runs in 23.0s
+  ARC: 60 runs in 22.8s
+  FEED: 60 runs in 23.4s
+  RF: 60 runs in 22.9s
+thresholds {'CUSUM': 16.152545928955078, 'KF': 4.799985885620117, 'BOCPD': 0.9999, 'ARC': 9.75361801146717}
+test set
+  NOM: 100 runs in 34.7s
+  GRID: 100 runs in 46.2s
+  CATH: 100 runs in 36.2s
+  ARC: 100 runs in 41.0s
+  FEED: 100 runs in 42.4s
+  RF: 100 runs in 40.3s
+{
+ "thresholds": {
+  "CUSUM": 16.152545928955078,
+  "KF": 4.799985885620117,
+  "BOCPD": 0.9999,
+  "ARC": 9.75361801146717
+ },
+ "far": {
+  "CUSUM": {
+   "false_alarms": 2,
+   "exposure_h": 65782.82714614455,
+   "per_1000h": 0.030403071542619422
+  },
+  "KF": {
+   "false_alarms": 0,
+   "exposure_h": 65888.85351663892,
+   "per_1000h": 0.0
+  },
+  "BOCPD": {
+   "false_alarms": 0,
+   "exposure_h": 65888.85351663892,
+   "per_1000h": 0.0
+  },
+  "OR": {
+   "false_alarms": 2,
+   "exposure_h": 65782.82714614455,
+   "per_1000h": 0.030403071542619422
+  },
+  "VOTE": {
+   "false_alarms": 0,
+   "exposure_h": 65888.85351663892,
+   "per_1000h": 0.0
+  }
+ },
+ "iso": {
+  "acc_float": 0.994,
+  "acc_int8": 0.994,
+  "n": 500,
+  "cm_float": [
+   [
+    98,
+    0,
+    0,
+    0,
+    2
+   ],
+   [
+    0,
+    100,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    100,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    99,
+    1
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    100
+   ]
+  ],
+  "cm_int8": [
+   [
+    98,
+    0,
+    0,
+    0,
+    2
+   ],
+   [
+    0,
+    100,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    100,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    99,
+    1
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    100
+   ]
+  ],
+  "classes": [
+   "GRID",
+   "CATH",
+   "ARC",
+   "FEED",
+   "RF"
+  ],
+  "agree": 1.0
+ },
+ "recovery": {
+  "GRID": {
+   "metric": "runs with electron backstreaming in final 10 h",
+   "no_action": 0.67,
+   "with_fdir": 0.49,
+   "n": 100
+  },
+  "CATH": {
+   "metric": "mean Vn rise in final 10 h [V]",
+   "no_action": 3.4250532094293584,
+   "with_fdir": 0.0,
+   "n": 100
+  },
+  "ARC": {
+   "metric": "recycles per 24 h after action",
+   "no_action": 57.229753485688214,
+   "with_fdir": 18.092352285994174,
+   "n": 100
+  },
+  "FEED": {
+   "metric": "mean flow deficit in final 10 h [%]",
+   "no_action": 14.382161495873506,
+   "with_fdir": 3.0110243304535986,
+   "n": 100
+  },
+  "RF": {
+   "metric": "runs exceeding 40 W RF-power envelope in final 10 h",
+   "no_action": 0.58,
+   "with_fdir": 0.0,
+   "n": 100
+  }
+ },
+ "fixed_point": {
+  "CUSUM": {
+   "same": 598,
+   "n": 600,
+   "max_shift_min": 278
+  },
+  "KF": {
+   "same": 595,
+   "n": 600,
+   "max_shift_min": 4
+  },
+  "VOTE": {
+   "same": 596,
+   "n": 600,
+   "max_shift_min": 278
+  },
+  "OR": {
+   "same": 597,
+   "n": 600,
+   "max_shift_min": 1
+  },
+  "max_abs_bias_err": 0.00042694807052612305,
+  "max_abs_cusum_err": 934275.5625,
+  "kf_gain": [
+   0.00546225292371804,
+   9.972651337915545e-06
+  ],
+  "detection_fixed": {
+   "GRID": {
+    "CUSUM": {
+     "pd": 0.99,
+     "delay_med_h": 18.636890112315736
+    },
+    "KF": {
+     "pd": 1.0,
+     "delay_med_h": 15.00381393528506
+    },
+    "BOCPD": {
+     "pd": 1.0,
+     "delay_med_h": 92.73781455787989
+    },
+    "OR": {
+     "pd": 0.99,
+     "delay_med_h": 14.961363329967769
+    },
+    "VOTE": {
+     "pd": 1.0,
+     "delay_med_h": 18.615394235058968
+    }
+   },
+   "CATH": {
+    "CUSUM": {
+     "pd": 1.0,
+     "delay_med_h": 6.511418946679169
+    },
+    "KF": {
+     "pd": 1.0,
+     "delay_med_h": 5.458367819239371
+    },
+    "BOCPD": {
+     "pd": 1.0,
+     "delay_med_h": 59.72479850309328
+    },
+    "OR": {
+     "pd": 1.0,
+     "delay_med_h": 5.437962672568589
+    },
+    "VOTE": {
+     "pd": 1.0,
+     "delay_med_h": 6.678588350602006
+    }
+   },
+   "ARC": {
+    "CUSUM": {
+     "pd": 0.0,
+     "delay_med_h": null
+    },
+    "KF": {
+     "pd": 0.0,
+     "delay_med_h": null
+    },
+    "BOCPD": {
+     "pd": 0.0,
+     "delay_med_h": null
+    },
+    "OR": {
+     "pd": 0.99,
+     "delay_med_h": 11.589888517023898
+    },
+    "VOTE": {
+     "pd": 1.0,
+     "delay_med_h": 11.602968087972773
+    }
+   },
+   "FEED": {
+    "CUSUM": {
+     "pd": 1.0,
+     "delay_med_h": 2.6713421093474112
+    },
+    "KF": {
+     "pd": 1.0,
+     "delay_med_h": 2.991215892157637
+    },
+    "BOCPD": {
+     "pd": 1.0,
+     "delay_med_h": 13.86860930305088
+    },
+    "OR": {
+     "pd": 1.0,
+     "delay_med_h": 2.6487534742897045
+    },
+    "VOTE": {
+     "pd": 1.0,
+     "delay_med_h": 3.0466194050963242
+    }
+   },
+   "RF": {
+    "CUSUM": {
+     "pd": 1.0,
+     "delay_med_h": 2.9955564188476425
+    },
+    "KF": {
+     "pd": 1.0,
+     "delay_med_h": 3.2360120439869435
+    },
+    "BOCPD": {
+     "pd": 1.0,
+     "delay_med_h": 34.08858298275312
+    },
+    "OR": {
+     "pd": 1.0,
+     "delay_med_h": 2.987223085514309
+    },
+    "VOTE": {
+     "pd": 1.0,
+     "delay_med_h": 3.2499382135968817
+    }
+   }
+  },
+  "far_fixed": {
+   "CUSUM": {
+    "false_alarms": 2,
+    "exposure_h": 65782.82714614455,
+    "per_1000h": 0.030403071542619422
+   },
+   "KF": {
+    "false_alarms": 0,
+    "exposure_h": 65888.85351663892,
+    "per_1000h": 0.0
+   },
+   "BOCPD": {
+    "false_alarms": 0,
+    "exposure_h": 65888.85351663892,
+    "per_1000h": 0.0
+   },
+   "OR": {
+    "false_alarms": 2,
+    "exposure_h": 65782.82714614455,
+    "per_1000h": 0.030403071542619422
+   },
+   "VOTE": {
+    "false_alarms": 0,
+    "exposure_h": 65888.85351663892,
+    "per_1000h": 0.0
+   }
+  },
+  "iso_acc_full_fixed_chain": 0.994,
+  "iso_n_full_fixed_chain": 500,
+  "bocpd_f32_same_alarm": 20,
+  "bocpd_f32_n": 20,
+  "bocpd_f32_max_shift_min": 0,
+  "bocpd_f32_max_abs_err": 9.347508990220632e-05
+ },
+ "config": {
+  "N_h": 300.0,
+  "n_train": {
+   "NOM": 100,
+   "GRID": 60,
+   "CATH": 60,
+   "ARC": 60,
+   "FEED": 60,
+   "RF": 60
+  },
+  "n_test": {
+   "NOM": 100,
+   "GRID": 100,
+   "CATH": 100,
+   "ARC": 100,
+   "FEED": 100,
+   "RF": 100
+  },
+  "cal_h": 24.0,
+  "persist_bocpd": 15,
+  "iso_win_min": 60,
+  "sigma": [
+   0.03,
+   0.004,
+   0.25,
+   0.3,
+   0.3
+  ]
+ },
+ "runtime_s": 404.41173338890076
+}
+GRID {'CUSUM': (0.99, 18.64), 'KF': (1.0, 15.0), 'BOCPD': (1.0, 92.74), 'OR': (0.99, 14.96), 'VOTE': (1.0, 18.62)}
+CATH {'CUSUM': (1.0, 6.51), 'KF': (1.0, 5.46), 'BOCPD': (1.0, 59.72), 'OR': (1.0, 5.44), 'VOTE': (1.0, 6.68)}
+ARC {'CUSUM': (0.0, None), 'KF': (0.0, None), 'BOCPD': (0.0, None), 'OR': (0.99, 11.59), 'VOTE': (1.0, 11.6)}
+FEED {'CUSUM': (1.0, 2.67), 'KF': (1.0, 2.99), 'BOCPD': (1.0, 13.87), 'OR': (1.0, 2.65), 'VOTE': (1.0, 3.05)}
+RF {'CUSUM': (1.0, 3.0), 'KF': (1.0, 3.24), 'BOCPD': (1.0, 34.09), 'OR': (1.0, 2.99), 'VOTE': (1.0, 3.25)}

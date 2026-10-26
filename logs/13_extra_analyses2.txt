@@ -1,0 +1,41 @@
+1) leave-one-out ablation: running detectors on the test set
+  NOM: 100 runs in 26.2s
+  GRID: 100 runs in 27.9s
+  CATH: 100 runs in 27.1s
+  ARC: 100 runs in 27.6s
+  FEED: 100 runs in 27.6s
+  RF: 100 runs in 27.2s
+2) dataset statistics
+   NOM done
+   GRID done
+   CATH done
+   ARC done
+   FEED done
+   RF done
+
+LEAVE-ONE-OUT ABLATION: detection rate | median delay   (FA = false alarms)
+variant                                       GRID          CATH           ARC          FEED            RF    FA
+full system (2-of-3 + arc)              100%|18.6h     100%|6.7h    100%|11.6h     100%|3.0h     100%|3.2h     0
+without CUSUM (Kalman AND BOCPD)        100%|92.7h    100%|59.7h    100%|11.6h    100%|13.9h    100%|34.1h     0
+without Kalman (CUSUM AND BOCPD)        100%|92.7h    100%|59.7h    100%|11.6h    100%|13.9h    100%|34.1h     0
+without BOCPD (CUSUM AND Kalman)        100%|18.6h     100%|6.7h    100%|11.6h     100%|3.0h     100%|3.2h     0
+without arc detector                    100%|18.6h     100%|6.7h         0%|-h     100%|3.0h     100%|3.2h     0
+without vote (any one fires)             99%|15.0h     100%|5.4h     99%|11.6h     100%|2.6h     100%|3.0h     2
+
+DATASET
+  runs: 1000  hours: 300,000  frames: 18,000,000
+  healthy telemetry (test set, recycle frames excluded):
+    Ib_mA     mean   15.000  std   0.030  min   14.865  max   15.140
+    Ia_mA     mean    0.090  std   0.006  min    0.066  max    0.113
+    Prf_W     mean   35.108  std   0.555  min   33.288  max   37.121
+    mdot_ugs  mean   30.000  std   0.758  min   27.534  max   32.367
+    Vn_V      mean   18.000  std   0.417  min   16.184  max   19.759
+    T_C       mean   20.000  std   5.622  min    9.428  max   30.575
+  healthy recycle rate: 62.2 per 1000 h
+  GRID  onset 51-149 h, growth 102-300 h, severity 0.802-1.2
+  CATH  onset 51-149 h, growth 50-197 h, severity 2-5
+  ARC   onset 51-147 h, growth 10-50 h, severity 0.0201-0.0584
+  FEED  onset 51-150 h, growth 22-149 h, severity 0.0807-0.199
+  RF    onset 51-148 h, growth 23-149 h, severity 0.0801-0.196
+
+runtime 168 s

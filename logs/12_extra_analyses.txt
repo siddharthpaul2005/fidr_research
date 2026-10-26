@@ -1,0 +1,38 @@
+1) limit-check baseline: setting limits from healthy TRAINING runs
+   limits: {'Ib': (14.819, 15.176), 'Ia': (0.061, 0.119), 'Prf': (32.861, 37.642), 'mdot': (27.176, 32.954), 'Vn': (15.648, 20.323), 'recycles_per_24h_max': 8}
+   NOM done
+   GRID done
+   CATH done
+   ARC done
+   FEED done
+   RF done
+2) ablation: re-running detectors on the test set
+  NOM: 100 runs in 25.6s
+  GRID: 100 runs in 25.6s
+  CATH: 100 runs in 25.3s
+  ARC: 100 runs in 25.4s
+  FEED: 100 runs in 26.4s
+  RF: 100 runs in 25.4s
+
+DETECTION: detection rate | median delay   (FA = false alarms in healthy hours)
+method                          GRID          CATH           ARC          FEED            RF      FA
+limit check (today)       100%|92.2h    100%|60.2h    100%|13.6h    100%|19.7h    100%|25.8h       0
+CUSUM only                 99%|18.6h     100%|6.5h     99%|11.6h     100%|2.7h     100%|3.0h       2
+Kalman only               100%|15.0h     100%|5.5h    100%|11.6h     100%|3.0h     100%|3.2h       0
+BOCPD only                100%|92.7h    100%|59.7h    100%|11.6h    100%|13.9h    100%|34.1h       0
+CUSUM or Kalman            99%|15.0h     100%|5.4h     99%|11.6h     100%|2.6h     100%|3.0h       2
+any of 3 (OR)              99%|15.0h     100%|5.4h     99%|11.6h     100%|2.6h     100%|3.0h       2
+2-of-3 vote (ours)        100%|18.6h     100%|6.7h    100%|11.6h     100%|3.0h     100%|3.2h       0
+
+CLASSIFIER WEIGHTS (positive = pushes towards that fault)
+feature         GRID    CATH     ARC    FEED      RF
+bias Ib         0.11   -0.05   -0.05   -0.12    0.11
+bias Ia         3.65   -0.09   -0.28   -1.74   -1.53
+bias Prf        0.15   -1.45   -1.08   -0.07    2.46
+bias mdot       0.55    0.33    0.19   -2.78    1.70
+bias Vn        -0.30    2.27   -0.65   -0.84   -0.47
+arc score      -0.07   -0.47    1.82   -0.75   -0.53
+Vn noise        0.37    0.27   -0.20   -0.37   -0.08
+total drift     1.13    0.05   -1.23    0.53   -0.48
+
+runtime 160 s

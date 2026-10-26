@@ -1,0 +1,249 @@
+{
+ "scenarios": {
+  "ground_fast": {
+   "pass_interval_h": 6.0,
+   "analysis_delay_h": 2.0
+  },
+  "ground_typical": {
+   "pass_interval_h": 12.0,
+   "analysis_delay_h": 8.0
+  },
+  "ground_slow": {
+   "pass_interval_h": 24.0,
+   "analysis_delay_h": 24.0
+  }
+ },
+ "faults": {
+  "GRID": {
+   "no_action": {
+    "damage_mean": 44.79,
+    "damage_median": 29.5,
+    "impulse_lost_Ns": 7.8857958568436235
+   },
+   "onboard": {
+    "damage_mean": 31.98,
+    "damage_median": 1.0,
+    "impulse_lost_Ns": 4.971341691434171,
+    "passes_needed": 0,
+    "operator_hours": 0.0,
+    "fix_delay_med_h": 19.615394235058968,
+    "fix_delay_p90_h": 26.12859226931074,
+    "correct_action": 0.98
+   },
+   "ground_fast": {
+    "damage_mean": 31.98,
+    "damage_median": 1.0,
+    "impulse_lost_Ns": 3.9497147665964354,
+    "operator_hours": 2.0,
+    "fix_delay_med_h": 27.593500480269373,
+    "fix_delay_p90_h": 33.995809129271834,
+    "passes_needed": 2
+   },
+   "ground_typical": {
+    "damage_mean": 31.98,
+    "damage_median": 1.0,
+    "impulse_lost_Ns": 3.9497147665964354,
+    "operator_hours": 8.0,
+    "fix_delay_med_h": 35.74597515201387,
+    "fix_delay_p90_h": 44.5503697369539,
+    "passes_needed": 2
+   },
+   "ground_slow": {
+    "damage_mean": 31.98,
+    "damage_median": 1.0,
+    "impulse_lost_Ns": 3.9497147665964354,
+    "operator_hours": 24.0,
+    "fix_delay_med_h": 55.79638484219707,
+    "fix_delay_p90_h": 65.22253019288824,
+    "passes_needed": 2
+   },
+   "metric": "hours with electron backstreaming",
+   "n": 100
+  },
+  "CATH": {
+   "no_action": {
+    "damage_mean": 161.04,
+    "damage_median": 162.5,
+    "impulse_lost_Ns": 0.0
+   },
+   "onboard": {
+    "damage_mean": 0.0,
+    "damage_median": 0.0,
+    "impulse_lost_Ns": 0.0,
+    "passes_needed": 0,
+    "operator_hours": 0.0,
+    "fix_delay_med_h": 7.678588350602006,
+    "fix_delay_p90_h": 12.461396174512677,
+    "correct_action": 1.0
+   },
+   "ground_fast": {
+    "damage_mean": 0.0,
+    "damage_median": 0.0,
+    "impulse_lost_Ns": 0.0,
+    "operator_hours": 2.0,
+    "fix_delay_med_h": 16.215433061870137,
+    "fix_delay_p90_h": 20.604204921638573,
+    "passes_needed": 2
+   },
+   "ground_typical": {
+    "damage_mean": 0.75,
+    "damage_median": 0.0,
+    "impulse_lost_Ns": 0.0,
+    "operator_hours": 8.0,
+    "fix_delay_med_h": 24.986737387571942,
+    "fix_delay_p90_h": 31.157832284247956,
+    "passes_needed": 2
+   },
+   "ground_slow": {
+    "damage_mean": 10.71,
+    "damage_median": 7.0,
+    "impulse_lost_Ns": 0.0,
+    "operator_hours": 24.0,
+    "fix_delay_med_h": 44.573603682322485,
+    "fix_delay_p90_h": 53.89100058922314,
+    "passes_needed": 2
+   },
+   "metric": "hours with V_n > 1 V above nominal",
+   "n": 100
+  },
+  "ARC": {
+   "no_action": {
+    "damage_mean": 451.99,
+    "damage_median": 457.5,
+    "impulse_lost_Ns": 0.0
+   },
+   "onboard": {
+    "damage_mean": 148.13,
+    "damage_median": 142.5,
+    "impulse_lost_Ns": 63.19291971555246,
+    "passes_needed": 0,
+    "operator_hours": 0.0,
+    "fix_delay_med_h": 12.602968087972773,
+    "fix_delay_p90_h": 18.46266041583497,
+    "correct_action": 1.0
+   },
+   "ground_fast": {
+    "damage_mean": 155.89,
+    "damage_median": 156.0,
+    "impulse_lost_Ns": 60.41257484457024,
+    "operator_hours": 2.0,
+    "fix_delay_med_h": 20.7019100368557,
+    "fix_delay_p90_h": 27.45254948084132,
+    "passes_needed": 2
+   },
+   "ground_typical": {
+    "damage_mean": 167.5,
+    "damage_median": 171.5,
+    "impulse_lost_Ns": 57.32898129754189,
+    "operator_hours": 8.0,
+    "fix_delay_med_h": 30.585410078654064,
+    "fix_delay_p90_h": 37.08475135065744,
+    "passes_needed": 2
+   },
+   "ground_slow": {
+    "damage_mean": 196.95,
+    "damage_median": 201.5,
+    "impulse_lost_Ns": 51.08049823104774,
+    "operator_hours": 24.0,
+    "fix_delay_med_h": 49.07303772214193,
+    "fix_delay_p90_h": 60.109119524947275,
+    "passes_needed": 2
+   },
+   "metric": "recycles (arcs) after onset",
+   "n": 100
+  },
+  "FEED": {
+   "no_action": {
+    "damage_mean": 169.16,
+    "damage_median": 169.5,
+    "impulse_lost_Ns": 0.0
+   },
+   "onboard": {
+    "damage_mean": 6.48,
+    "damage_median": 0.0,
+    "impulse_lost_Ns": 0.7514506715147578,
+    "passes_needed": 0,
+    "operator_hours": 0.0,
+    "fix_delay_med_h": 4.046619405096324,
+    "fix_delay_p90_h": 5.811009061556739,
+    "correct_action": 0.99
+   },
+   "ground_fast": {
+    "damage_mean": 4.65,
+    "damage_median": 0.0,
+    "impulse_lost_Ns": 0.0,
+    "operator_hours": 2.0,
+    "fix_delay_med_h": 12.258503004472413,
+    "fix_delay_p90_h": 15.060081006030245,
+    "passes_needed": 2
+   },
+   "ground_typical": {
+    "damage_mean": 6.63,
+    "damage_median": 1.0,
+    "impulse_lost_Ns": 0.0,
+    "operator_hours": 8.0,
+    "fix_delay_med_h": 20.78285589347604,
+    "fix_delay_p90_h": 25.747644327344247,
+    "passes_needed": 2
+   },
+   "ground_slow": {
+    "damage_mean": 16.96,
+    "damage_median": 14.0,
+    "impulse_lost_Ns": 0.0,
+    "operator_hours": 24.0,
+    "fix_delay_med_h": 38.874895399514116,
+    "fix_delay_p90_h": 49.54223955907976,
+    "passes_needed": 2
+   },
+   "metric": "hours with flow deficit > 5 %",
+   "n": 100
+  },
+  "RF": {
+   "no_action": {
+    "damage_mean": 82.15,
+    "damage_median": 94.0,
+    "impulse_lost_Ns": 0.0
+   },
+   "onboard": {
+    "damage_mean": 0.0,
+    "damage_median": 0.0,
+    "impulse_lost_Ns": 66.07174691197697,
+    "passes_needed": 0,
+    "operator_hours": 0.0,
+    "fix_delay_med_h": 4.249938213596883,
+    "fix_delay_p90_h": 6.41786145670689,
+    "correct_action": 1.0
+   },
+   "ground_fast": {
+    "damage_mean": 0.0,
+    "damage_median": 0.0,
+    "impulse_lost_Ns": 63.358338363224156,
+    "operator_hours": 2.0,
+    "fix_delay_med_h": 12.519363259402041,
+    "fix_delay_p90_h": 15.443870573730006,
+    "passes_needed": 2
+   },
+   "ground_typical": {
+    "damage_mean": 0.05,
+    "damage_median": 0.0,
+    "impulse_lost_Ns": 60.33026125912595,
+    "operator_hours": 8.0,
+    "fix_delay_med_h": 21.056859241952758,
+    "fix_delay_p90_h": 26.58832153129096,
+    "passes_needed": 2
+   },
+   "ground_slow": {
+    "damage_mean": 1.93,
+    "damage_median": 0.0,
+    "impulse_lost_Ns": 53.82641386196434,
+    "operator_hours": 24.0,
+    "fix_delay_med_h": 41.1816061142171,
+    "fix_delay_p90_h": 50.03273895871237,
+    "passes_needed": 2
+   },
+   "metric": "hours above 40 W RF power",
+   "n": 100
+  }
+ },
+ "runtime_s": 166.74562907218933
+}

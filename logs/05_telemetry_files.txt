@@ -1,0 +1,6 @@
+fault NOM starts at minute none
+fault GRID starts at minute 6070
+fault CATH starts at minute 6070
+fault ARC starts at minute 6070
+fault FEED starts at minute 6070
+fault RF starts at minute 6070

@@ -1,0 +1,42 @@
+FAST-FAULT variant: growth time constants x 0.1
+regenerating the test set (same seed as run_experiments.py)
+  NOM: 100 runs in 26.2s
+  GRID: 100 runs in 26.5s
+  CATH: 100 runs in 27.3s
+  ARC: 100 runs in 26.8s
+  FEED: 100 runs in 31.0s
+  RF: 100 runs in 28.3s
+  GRID: done
+  CATH: done
+  ARC: done
+  FEED: done
+  RF: done
+
+TIME FROM FAULT ONSET TO CORRECTIVE COMMAND (median hours)
+fault          onboard     ground_fast  ground_typical     ground_slow
+GRID               3.9            12.1            21.3            38.0
+CATH               2.6            10.6            19.7            41.1
+ARC                4.3            12.7            21.5            40.0
+FEED               1.8             9.8            18.6            38.7
+RF                 1.9            10.1            19.9            37.1
+
+DAMAGE AFTER ONSET (mean per run; lower is better)
+fault        no_action         onboard     ground_fast  ground_typical     ground_slow   metric
+GRID             182.0           150.6           150.8           152.4           155.5   hours with electron backstreaming
+CATH             196.3             0.0             6.8            15.9            37.2   hours with V_n > 1 V above nominal
+ARC              485.9           158.4           170.9           186.6           217.8   recycles (arcs) after onset
+FEED             195.5             5.0            11.7            20.5            39.7   hours with flow deficit > 5 %
+RF               120.1             0.0             2.3             7.9            18.8   hours above 40 W RF power
+
+TOTAL IMPULSE LOST AFTER ONSET (mean N s per run; nominal thrust 0.942 mN)
+fault        no_action         onboard     ground_fast  ground_typical     ground_slow
+GRID              37.6            19.7            19.7            20.1            21.8
+CATH               0.0             0.0             0.0             0.0             0.0
+ARC                0.0            66.1            63.4            60.3            53.8
+FEED               0.0             0.0             0.0             0.0             0.0
+RF                 0.0            67.6            64.8            61.7            55.5
+
+GROUND EFFORT PER FAULT: onboard 0 passes / 0 operator-hours; ground_fast: 2 passes / 2 operator-hours; ground_typical: 2 passes / 8 operator-hours; ground_slow: 2 passes / 24 operator-hours
+
+onboard action correct: GRID 100%, CATH 100%, ARC 100%, FEED 100%, RF 100%
+runtime 177 s

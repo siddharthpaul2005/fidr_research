@@ -1,0 +1,1 @@
+41548 [('__ieee754_expf', 20343), ('fdir_detect_z', 12043), ('expf', 6194), ('finitef', 1956), ('__ieee754_logf', 366), ('log1pf', 220), ('expm1f', 195), ('fdir_step', 150), ('logf', 72), ('bench_step', 9)]

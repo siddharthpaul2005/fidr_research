@@ -1,0 +1,322 @@
+{
+ "limits": {
+  "Ib": [
+   14.819229906900002,
+   15.175573631132522
+  ],
+  "Ia": [
+   0.061390782271848354,
+   0.11881377703986706
+  ],
+  "Prf": [
+   32.86096464045749,
+   37.641514765929045
+  ],
+  "mdot": [
+   27.175656290581923,
+   32.953721249154064
+  ],
+  "Vn": [
+   15.647749036151268,
+   20.322517458249468
+  ],
+  "recycles_per_24h_max": 8
+ },
+ "limit_check": {
+  "per_fault": {
+   "GRID": {
+    "pd": 1.0,
+    "pre_onset_alarms": 0,
+    "delay_med_h": 92.16212434384889
+   },
+   "CATH": {
+    "pd": 1.0,
+    "pre_onset_alarms": 0,
+    "delay_med_h": 60.21977974253397
+   },
+   "ARC": {
+    "pd": 1.0,
+    "pre_onset_alarms": 0,
+    "delay_med_h": 13.58035629761829
+   },
+   "FEED": {
+    "pd": 1.0,
+    "pre_onset_alarms": 0,
+    "delay_med_h": 19.722983948894463
+   },
+   "RF": {
+    "pd": 1.0,
+    "pre_onset_alarms": 0,
+    "delay_med_h": 25.836000970805465
+   }
+  },
+  "false_alarms": 0,
+  "exposure_h": 65888.85351663892
+ },
+ "ablation": {
+  "CUSUM only": {
+   "per_fault": {
+    "GRID": {
+     "pd": 0.99,
+     "pre_onset_alarms": 1,
+     "delay_med_h": 18.636890112315736
+    },
+    "CATH": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 6.511418946679169
+    },
+    "ARC": {
+     "pd": 0.99,
+     "pre_onset_alarms": 1,
+     "delay_med_h": 11.589888517023898
+    },
+    "FEED": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 2.6713421093474112
+    },
+    "RF": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 2.9955564188476425
+    }
+   },
+   "false_alarms": 2,
+   "exposure_h": 65782.82714614455
+  },
+  "Kalman only": {
+   "per_fault": {
+    "GRID": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 15.00381393528506
+    },
+    "CATH": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 5.458367819239371
+    },
+    "ARC": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 11.602968087972773
+    },
+    "FEED": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 2.991215892157637
+    },
+    "RF": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 3.2360120439869435
+    }
+   },
+   "false_alarms": 0,
+   "exposure_h": 65888.85351663892
+  },
+  "BOCPD only": {
+   "per_fault": {
+    "GRID": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 92.73781455787989
+    },
+    "CATH": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 59.72479850309328
+    },
+    "ARC": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 11.602968087972773
+    },
+    "FEED": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 13.86860930305088
+    },
+    "RF": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 34.08858298275312
+    }
+   },
+   "false_alarms": 0,
+   "exposure_h": 65888.85351663892
+  },
+  "CUSUM or Kalman": {
+   "per_fault": {
+    "GRID": {
+     "pd": 0.99,
+     "pre_onset_alarms": 1,
+     "delay_med_h": 14.961363329967769
+    },
+    "CATH": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 5.437962672568589
+    },
+    "ARC": {
+     "pd": 0.99,
+     "pre_onset_alarms": 1,
+     "delay_med_h": 11.589888517023898
+    },
+    "FEED": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 2.6487534742897045
+    },
+    "RF": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 2.987223085514309
+    }
+   },
+   "false_alarms": 2,
+   "exposure_h": 65782.82714614455
+  },
+  "any of 3 (OR)": {
+   "per_fault": {
+    "GRID": {
+     "pd": 0.99,
+     "pre_onset_alarms": 1,
+     "delay_med_h": 14.961363329967769
+    },
+    "CATH": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 5.437962672568589
+    },
+    "ARC": {
+     "pd": 0.99,
+     "pre_onset_alarms": 1,
+     "delay_med_h": 11.589888517023898
+    },
+    "FEED": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 2.6487534742897045
+    },
+    "RF": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 2.987223085514309
+    }
+   },
+   "false_alarms": 2,
+   "exposure_h": 65782.82714614455
+  },
+  "2-of-3 vote (ours)": {
+   "per_fault": {
+    "GRID": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 18.615394235058968
+    },
+    "CATH": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 6.678588350602006
+    },
+    "ARC": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 11.602968087972773
+    },
+    "FEED": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 3.0466194050963242
+    },
+    "RF": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 3.2499382135968817
+    }
+   },
+   "false_alarms": 0,
+   "exposure_h": 65888.85351663892
+  }
+ },
+ "explainability": {
+  "features": [
+   "bias Ib",
+   "bias Ia",
+   "bias Prf",
+   "bias mdot",
+   "bias Vn",
+   "arc score",
+   "Vn noise",
+   "total drift"
+  ],
+  "classes": [
+   "GRID",
+   "CATH",
+   "ARC",
+   "FEED",
+   "RF"
+  ],
+  "W": [
+   [
+    0.11469143818624916,
+    -0.053396801480159926,
+    -0.04910836903789307,
+    -0.12385389919480035,
+    0.11166763152660494
+   ],
+   [
+    3.647238715477314,
+    -0.09207250098062726,
+    -0.27785800802106403,
+    -1.743191435078744,
+    -1.5341167713968713
+   ],
+   [
+    0.1451625076161558,
+    -1.4524497804013867,
+    -1.0840291141913936,
+    -0.07287542531873088,
+    2.46419181229535
+   ],
+   [
+    0.5509204719346216,
+    0.3330439106565758,
+    0.18937029206917463,
+    -2.7753421663544873,
+    1.7020074916941197
+   ],
+   [
+    -0.3016918619400203,
+    2.2658254845688535,
+    -0.6530369175073463,
+    -0.8406068614436762,
+    -0.47048984367781055
+   ],
+   [
+    -0.06514866870637429,
+    -0.4702234772825847,
+    1.815398872811948,
+    -0.7468308466262717,
+    -0.5331958801967186
+   ],
+   [
+    0.3745197538576511,
+    0.27301571062899727,
+    -0.2033141329896835,
+    -0.3686538923834721,
+    -0.07556743911349209
+   ],
+   [
+    1.1302652824033597,
+    0.04771239837735541,
+    -1.226771834152534,
+    0.525215778046114,
+    -0.47642162467429316
+   ]
+  ]
+ },
+ "runtime_s": 159.50364923477173
+}

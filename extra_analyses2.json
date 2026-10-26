@@ -1,0 +1,345 @@
+{
+ "leave_one_out": {
+  "full system (2-of-3 + arc)": {
+   "per_fault": {
+    "GRID": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 18.615394235058968
+    },
+    "CATH": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 6.678588350602006
+    },
+    "ARC": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 11.602968087972773
+    },
+    "FEED": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 3.0466194050963242
+    },
+    "RF": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 3.2499382135968817
+    }
+   },
+   "false_alarms": 0,
+   "exposure_h": 65888.85351663892
+  },
+  "without CUSUM (Kalman AND BOCPD)": {
+   "per_fault": {
+    "GRID": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 92.73781455787989
+    },
+    "CATH": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 59.72479850309328
+    },
+    "ARC": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 11.602968087972773
+    },
+    "FEED": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 13.86860930305088
+    },
+    "RF": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 34.08858298275312
+    }
+   },
+   "false_alarms": 0,
+   "exposure_h": 65888.85351663892
+  },
+  "without Kalman (CUSUM AND BOCPD)": {
+   "per_fault": {
+    "GRID": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 92.73781455787989
+    },
+    "CATH": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 59.72479850309328
+    },
+    "ARC": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 11.602968087972773
+    },
+    "FEED": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 13.86860930305088
+    },
+    "RF": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 34.08858298275312
+    }
+   },
+   "false_alarms": 0,
+   "exposure_h": 65888.85351663892
+  },
+  "without BOCPD (CUSUM AND Kalman)": {
+   "per_fault": {
+    "GRID": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 18.615394235058968
+    },
+    "CATH": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 6.678588350602006
+    },
+    "ARC": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 11.602968087972773
+    },
+    "FEED": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 3.0466194050963242
+    },
+    "RF": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 3.2499382135968817
+    }
+   },
+   "false_alarms": 0,
+   "exposure_h": 65888.85351663892
+  },
+  "without arc detector": {
+   "per_fault": {
+    "GRID": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 18.615394235058968
+    },
+    "CATH": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 6.678588350602006
+    },
+    "ARC": {
+     "pd": 0.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": null
+    },
+    "FEED": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 3.0466194050963242
+    },
+    "RF": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 3.2499382135968817
+    }
+   },
+   "false_alarms": 0,
+   "exposure_h": 65888.85351663892
+  },
+  "without vote (any one fires)": {
+   "per_fault": {
+    "GRID": {
+     "pd": 0.99,
+     "pre_onset_alarms": 1,
+     "delay_med_h": 14.961363329967769
+    },
+    "CATH": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 5.437962672568589
+    },
+    "ARC": {
+     "pd": 0.99,
+     "pre_onset_alarms": 1,
+     "delay_med_h": 11.589888517023898
+    },
+    "FEED": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 2.6487534742897045
+    },
+    "RF": {
+     "pd": 1.0,
+     "pre_onset_alarms": 0,
+     "delay_med_h": 2.987223085514309
+    }
+   },
+   "false_alarms": 2,
+   "exposure_h": 65782.82714614455
+  }
+ },
+ "dataset": {
+  "frame_period_s": 60,
+  "run_length_h": 300.0,
+  "frames_per_run": 18000,
+  "channels": [
+   "Ib_mA",
+   "Ia_mA",
+   "Prf_W",
+   "mdot_ugs",
+   "Vn_V",
+   "T_C",
+   "n_recycle"
+  ],
+  "training_runs": {
+   "NOM": 100,
+   "GRID": 60,
+   "CATH": 60,
+   "ARC": 60,
+   "FEED": 60,
+   "RF": 60
+  },
+  "test_runs": {
+   "NOM": 100,
+   "GRID": 100,
+   "CATH": 100,
+   "ARC": 100,
+   "FEED": 100,
+   "RF": 100
+  },
+  "total_runs": 1000,
+  "total_hours": 300000.0,
+  "total_frames": 18000000,
+  "healthy_channel_stats_test_set": {
+   "Ib_mA": {
+    "mean": 14.999975756302833,
+    "std": 0.03001348129238928,
+    "min": 14.864733167594451,
+    "max": 15.140264596150331,
+    "noise_sigma_model": 0.03
+   },
+   "Ia_mA": {
+    "mean": 0.08990906654409284,
+    "std": 0.005663996979321639,
+    "min": 0.06646349580500219,
+    "max": 0.11341290074098592,
+    "noise_sigma_model": 0.004
+   },
+   "Prf_W": {
+    "mean": 35.107982630123956,
+    "std": 0.5553287499287248,
+    "min": 33.28809279774294,
+    "max": 37.120930577061,
+    "noise_sigma_model": 0.25
+   },
+   "mdot_ugs": {
+    "mean": 29.999742591420507,
+    "std": 0.7575801005456262,
+    "min": 27.533886761957714,
+    "max": 32.36742767929066,
+    "noise_sigma_model": 0.3
+   },
+   "Vn_V": {
+    "mean": 18.000015592454975,
+    "std": 0.4168658715600819,
+    "min": 16.18352615384097,
+    "max": 19.759497219724434,
+    "noise_sigma_model": 0.3
+   },
+   "T_C": {
+    "mean": 20.000412074389953,
+    "std": 5.622479783416799,
+    "min": 9.427608512257756,
+    "max": 30.574626853586516
+   }
+  },
+  "healthy_recycles_per_1000h": 62.166666666666664,
+  "fault_parameters_test_set": {
+   "GRID": {
+    "onset_h_range": [
+     50.977175391637765,
+     148.53406731596127
+    ],
+    "growth_h_range": [
+     101.88056321985772,
+     299.5911084441653
+    ],
+    "severity_range": [
+     0.8022987307083151,
+     1.1988803818776832
+    ],
+    "recycles_total": 1842
+   },
+   "CATH": {
+    "onset_h_range": [
+     51.232157644498464,
+     148.91161476863755
+    ],
+    "growth_h_range": [
+     50.489631776130864,
+     196.56529820261696
+    ],
+    "severity_range": [
+     2.004805738076759,
+     4.9968753101880665
+    ],
+    "recycles_total": 1786
+   },
+   "ARC": {
+    "onset_h_range": [
+     50.512313736005055,
+     147.48789977147402
+    ],
+    "growth_h_range": [
+     10.110531715205532,
+     49.90009312039812
+    ],
+    "severity_range": [
+     0.02005860196873481,
+     0.05843628937050348
+    ],
+    "recycles_total": 45935
+   },
+   "FEED": {
+    "onset_h_range": [
+     51.191354877689065,
+     149.58705470669435
+    ],
+    "growth_h_range": [
+     21.739635826828152,
+     148.87929675263322
+    ],
+    "severity_range": [
+     0.08068192743791489,
+     0.19926166491675804
+    ],
+    "recycles_total": 1765
+   },
+   "RF": {
+    "onset_h_range": [
+     51.12310087795879,
+     147.79775356858735
+    ],
+    "growth_h_range": [
+     22.697001472494097,
+     149.25867307608604
+    ],
+    "severity_range": [
+     0.0801125358095284,
+     0.19641768917903968
+    ],
+    "recycles_total": 1817
+   }
+  }
+ },
+ "runtime_s": 168.42872762680054
+}

@@ -1,0 +1,12 @@
+fault NOM starts at minute none
+NOM result: 17001 -1 -1 -1 -1 -1 0
+fault GRID starts at minute 6070
+GRID result: 7993 7583 14549 -1 7993 8053 1
+fault CATH starts at minute 6070
+CATH result: 6856 6685 14545 -1 6856 6916 2
+fault ARC starts at minute 6070
+ARC result: 16744 -1 -1 6957 6957 7017 3
+fault FEED starts at minute 6070
+FEED result: 6516 6455 8407 -1 6516 6576 4
+fault RF starts at minute 6070
+RF result: 6543 6510 9454 -1 6543 6603 5

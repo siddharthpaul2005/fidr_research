@@ -1,0 +1,9 @@
+   text	   data	    bss	    dec	    hex	filename
+   3442	      0	      0	   3442	    d72	fdir.o
+   6200	     92	   3036	   9328	   2470	bench.elf
+fdir.c:30:6:fdir_init	16	static
+fdir.c:80:6:fdir_detect_z	384	static
+fdir.c:160:15:fdir_step	160	static
+fdir.c:197:7:fdir_dbg_cusum	8	static
+fdir.c:206:7:fdir_dbg_kf	0	static
+fdir.c:212:7:fdir_dbg_bocpd	24	static

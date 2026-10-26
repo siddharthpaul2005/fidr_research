@@ -1,0 +1,23 @@
+Mon Oct 26 14:55:01 UTC 2026
+Model name:                              AMD Ryzen 5 5600H with Radeon Graphics
+               total        used        free      shared  buff/cache   available
+Mem:           7.4Gi       630Mi       6.7Gi       3.6Mi       242Mi       6.8Gi
+Swap:          2.0Gi          0B       2.0Gi
+Python 3.14.4
+gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+arm-none-eabi-gcc (15:14.2.rel1-1) 14.2.1 20241119
+contourpy==1.4.0
+cycler==0.12.1
+fonttools==4.67.0
+kiwisolver==1.5.1
+matplotlib==3.11.2
+numpy==2.5.4
+packaging==26.3
+pillow==13.0.0
+pyelftools==0.33
+pyparsing==3.3.3
+python-dateutil==3.0.0
+scipy==1.18.1
+six==1.17.0
+tzdata==2026.5
+unicorn==2.1.4

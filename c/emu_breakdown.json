@@ -1,0 +1,1 @@
+{"total": 41548, "by": {"bench_step": 9, "fdir_step": 150, "expf": 6194, "__ieee754_expf": 20343, "finitef": 1956, "fdir_detect_z": 12043, "logf": 72, "__ieee754_logf": 366, "log1pf": 220, "expm1f": 195}}

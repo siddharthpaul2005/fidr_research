@@ -1,0 +1,3 @@
+thresholds same: True
+detection same: True
+isolation: 0.994 -> 0.994

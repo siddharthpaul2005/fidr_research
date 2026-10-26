@@ -1,0 +1,9 @@
+GRID -> Va correction              1 frame(s):  [EB 90 00 10 1F FF 2E DE]
+CATH -> switch neutraliser         1 frame(s):  [EB 90 00 11 01 00 27 62]
+ARC -> throttle + HV conditioning  2 frame(s):  [EB 90 00 12 87 00 CF 0C]  [EB 90 01 13 03 00 59 D4]
+FEED -> heater set point           1 frame(s):  [EB 90 00 14 0A 00 10 68]
+RF -> throttle                     1 frame(s):  [EB 90 00 12 87 00 CF 0C]
+safety: 2nd action 1 h later -> 0 frames (blocked by 6 h gap)
+safety: repeated grid corrections every 6.7 h -> 1 1 0 0 0  (Va now -275 V, safe_mode=1)
+safety: 2nd neutraliser switch -> 0 frames, safe_mode=1 (no spare left)
+CRC-16/CCITT-FALSE self-test ("123456789" -> 0x29B1): 0x29B1
